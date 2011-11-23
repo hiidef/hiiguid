@@ -26,7 +26,7 @@ class HiiGUID(long):
         UUID4 integer. In the event of a string it attempts to decode a
         packed struct string or base36 string.
         """
-        if isinstance(value, str):
+        if isinstance(value, basestring):
             if len(value) == 20:
                 value = _unpack(value)
             else:
