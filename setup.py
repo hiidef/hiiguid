@@ -5,7 +5,7 @@
 
 from setuptools import setup, find_packages
 
-from pylogd import VERSION
+from hiiguid import VERSION
 version = '.'.join(map(str, VERSION))
 
 # some trove classifiers:
